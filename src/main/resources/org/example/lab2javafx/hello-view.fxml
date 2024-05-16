@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab2javafx.HelloController">
+<children>
+   <Label fx:id="myRegister" text="Register" />
+   <Label text="Email" />
+   <TextField fx:id="email" />
+   <Label text="Password" />
+   <PasswordField fx:id="password" />
+   <Button mnemonicParsing="false" onAction="#onClick" text="Button" />
+   <ChoiceBox fx:id="nation" prefWidth="150.0" />
+   <RadioButton fx:id="radioMale" mnemonicParsing="false" text="male">
+      <toggleGroup>
+         <ToggleGroup fx:id="gender_group" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="radioFemale" mnemonicParsing="false" text="female" toggleGroup="$gender_group" />
+   <Label fx:id="userINFO" />
+      <Label text="Email" />
+      <TextField fx:id="loginEmail" />
+      <Label text="Password" />
+      <PasswordField fx:id="loginPassword" />
+   <Button mnemonicParsing="false" onAction="#onloginClick" text="Button" />
+      <Label fx:id="loginINFO" text="Label" />
+</children>
+</VBox>
